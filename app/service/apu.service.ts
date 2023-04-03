@@ -14,7 +14,7 @@ class Apu {
                 return response;
             })
             .catch(error => {
-                return console.error(error);
+                throw error;
             });
 
         return rta;

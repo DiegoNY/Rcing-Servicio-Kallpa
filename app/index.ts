@@ -35,6 +35,7 @@ setInterval(async () => {
             documento.FechaEmision = new Date(documento.FechaEmision).toISOString().substring(0, 10);
             documento.HoraEmision = "00:00:00";
             documento.FechaVencimiento = new Date(documento.FechaEmision).toISOString().substring(0, 10);
+            documento.placa = null;
             //Campo desaparecera CORRELATIV
             documento.CORRELATIV = documento.CodVenta;
 

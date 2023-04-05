@@ -1,13 +1,14 @@
 import sql from 'mssql'
+import { database, password, port, server, user } from '../config/config';
 
 const config = {
-    user: 'rcIngenieros',
-    password: 'z0qceUy=6jO+',
-    server: '207.38.87.135',
-    database: 'db2_JrTelecom',
-    port: 1439,
+    user: user,
+    password: password,
+    server: server,
+    database: database,
+    port: port,
     options: {
-        encrypt: false,
+        encrypt: true,
         trustServerCertificate: true
     },
     pool: {
